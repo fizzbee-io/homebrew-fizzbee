@@ -9,7 +9,7 @@ For more information, visit the [official FizzBee repository](https://github.com
 ## Installation
 
 ```bash
-brew tap flaneur2020/fizzbee
+brew tap fizzbee-io/fizzbee
 brew install fizzbee
 ```
 
