@@ -17,6 +17,7 @@ class Fizzbee < Formula
     libexec.install "parser"
     libexec.install "fizz.env"
     libexec.install "fizz"
+    libexec.install "mbt_gen.zip"
 
     # Create wrapper script that sets correct environment variables
     (bin/"fizz").write <<~EOS
