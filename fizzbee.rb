@@ -1,14 +1,14 @@
 class Fizzbee < Formula
   desc "A formal specification language and model checker to specify distributed systems."
   homepage "https://github.com/fizzbee-io/fizzbee"
-  version "0.4.0"
+  version "0.5.0"
 
   if Hardware::CPU.arm?
-    url "https://github.com/fizzbee-io/fizzbee/releases/download/v0.4.0/fizzbee-v0.4.0-macos_arm.tar.gz"
-    sha256 "73bb1711b5daad43a1b5c61e097f23a4c5f83f3a58d466234c2cc44b7135eaac"
+    url "https://github.com/fizzbee-io/fizzbee/releases/download/v0.5.0/fizzbee-v0.5.0-macos_arm.tar.gz"
+    sha256 "d8e87a772bbaec0ef7dc3b9f2063de270bfb56b812b93a24a748dafc0efa3ce4"
   else
-    url "https://github.com/fizzbee-io/fizzbee/releases/download/v0.4.0/fizzbee-v0.4.0-macos_x86.tar.gz"
-    sha256 "bf7592f608360605e10e902275c3780a34df81606395ec501891c66b0ccd26a5"
+    url "https://github.com/fizzbee-io/fizzbee/releases/download/v0.5.0/fizzbee-v0.5.0-macos_x86.tar.gz"
+    sha256 "2422d1c6bcf41f7c12385ce9480ac382d869b33d92e1ff0279005fadda2c3f16"
   end
 
   def install
