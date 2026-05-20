@@ -15,10 +15,10 @@ echo "  x86: ${X86_SHA}"
 
 FORMULA="$(dirname "$0")/fizzbee.rb"
 
-sed -i '' \
+sed -i '' -E \
   -e "s|version \".*\"|version \"${VERSION}\"|" \
-  -e "s|fizzbee-v[^/]*/fizzbee-v[^-]*-macos_arm|fizzbee-v${VERSION}/fizzbee-v${VERSION}-macos_arm|" \
-  -e "s|fizzbee-v[^/]*/fizzbee-v[^-]*-macos_x86|fizzbee-v${VERSION}/fizzbee-v${VERSION}-macos_x86|" \
+  -e "s|v[^/]+/fizzbee-v[^-]+-macos_arm|v${VERSION}/fizzbee-v${VERSION}-macos_arm|" \
+  -e "s|v[^/]+/fizzbee-v[^-]+-macos_x86|v${VERSION}/fizzbee-v${VERSION}-macos_x86|" \
   "$FORMULA"
 
 # Update sha256 values — replace old arm sha first, then x86
